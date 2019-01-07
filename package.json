@@ -1,0 +1,33 @@
+{
+  "name": "simple-api-demo",
+  "version": "1.0.0",
+  "description": "express api demo with /message and /health endpoints",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinal--shah/simple-node-api.git"
+  },
+  "keywords": [
+    "express",
+    "demo",
+    "api"
+  ],
+  "author": "jinal--shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinal--shah/simple-node-api/issues"
+  },
+  "homepage": "https://github.com/jinal--shah/simple-node-api#readme"
+}
