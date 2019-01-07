@@ -29,7 +29,6 @@ node {
             }
         }
     } finally {
-        junit 'integration-tests/**/*.xml' // this will throw any error in the try {}
         cleanWs()
     }
 }
