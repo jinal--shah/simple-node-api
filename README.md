@@ -20,7 +20,7 @@ src.
 
 ## BUILD
 
-Run `build.sh`.
+Run `build.sh`
 
 The unit tests are actually run as part of the build phase.
 
