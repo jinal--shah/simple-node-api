@@ -1,10 +1,16 @@
 // vim: et sr sw=4 ts=4 smartindent:
-
-pipeline {
-    agent {
-        docker {
-            args '-v /opt/cache/.m2:/root/.m2'
-            image 'jenkins-runner:stable'
+/*
+    ... using scripted pipeline instead of declarative, due to
+    limitations of the docker-workflow with swarm.
+*/
+node {
+    checkout scm
+    docker.withServer("tcp://10.95.225.29:4243") {
+        docker.image('jenkins-runner:stable').inside {
+            sh '''
+                pwd ; ls -l ;
+                /bin/bash ./build.sh
+            '''
         }
     }
 }
