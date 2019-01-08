@@ -14,12 +14,6 @@ _... code for a node-based api, along with all assets required for build-test-de
 
 ## BUILD
 
-Built using `docker run` rather than `docker build`
-to take advantage of volume mounts for m2 cache and
-src.
-
-## BUILD
-
 Run `build.sh`
 
 The unit tests are actually run as part of the build phase.
